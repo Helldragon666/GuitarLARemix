@@ -1,0 +1,52 @@
+.blogs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+
+@media (min-width: 768px) {
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .blogs {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.blog {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.blog .texto {
+    white-space: pre-wrap;
+}
+
+.blog .contenido {
+    padding: 1.5rem;
+}
+
+.blog .contenido h3 {
+    font-weight: 900;
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+.blog .fecha {
+    font-size: 1.4rem;
+    color: var(--primary);
+}
+
+.blog .resumen {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+.mt-10 {
+    margin-top: 10rem;
+}

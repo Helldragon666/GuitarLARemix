@@ -1,0 +1,142 @@
+.contenido {
+    display: grid;
+    gap: 5rem;
+    align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+    .contenido {
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+.carrito {
+    padding: 3rem;
+}
+
+.producto {
+    display: grid;
+    padding: 3rem 0;
+    border-bottom: 1px solid #CFCFCF;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .producto {
+        grid-template-columns: 1fr 3fr;
+        gap: 4rem;
+        align-items: center;
+        padding: 3rem 0;
+        border-bottom: 1px solid #CFCFCF;
+        position: relative;
+    }
+}
+
+.producto .imagen {
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+}
+
+.producto:last-of-type {
+    border-bottom: none;
+}
+
+.producto p {
+    margin: 0 0 1rem 0;
+}
+
+.producto span {
+    font-weight: 900;
+    font-size: 3.2rem;
+}
+
+.producto .nombre {
+    font-weight: 700;
+    font-size: 4.2rem;
+}
+
+.producto .select {
+    all: unset;
+    border: 1px solid #CFCFCF;
+    text-align: center;
+    width: 80%;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+.producto .precio {
+    margin-top: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.producto .subtotal {
+    font-size: 2.2rem;
+}
+
+
+.producto .btn_eliminar {
+    all: unset;
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    padding: .5rem 1rem;
+    border: 1px solid #f30606;
+    border-radius: 1rem;
+    color: #f30606;
+    transition: background-color 300ms, color 300ms;
+}
+
+@media (min-width: 768px) {
+    .producto .btn_eliminar {
+        top: 7rem;
+        right: 8rem;
+    }
+}
+
+.producto .btn_eliminar:hover {
+    cursor: pointer;
+    background-color: #f30606;
+    color: var(--white);
+}
+
+.resumen {
+    background-color: #F3F3F3;
+    padding: 3rem;
+    border-radius: 1rem;
+    position: sticky;
+    top: 3rem;
+}
+
+.vacio {
+    margin-bottom: 30rem;
+}
+
+/*#F9FAFB*/
+
+.formulario label {
+    display: block;
+}
+
+.formulario input {
+    width: 100%;
+}
+
+.formulario input[type='submit'] {
+    margin-top: 2rem;
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+
+.formulario input[type='submit']:hover {
+    background-color: var(--primary);
+    cursor: pointer;
+}
