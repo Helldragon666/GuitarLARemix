@@ -124,7 +124,8 @@
 }
 
 .footer .navegacion a,
-.footer .copyright {
+.footer .copyright,
+.footer p {
   color: var(--white);
   font-size: 2.2rem;
   text-decoration: none;
